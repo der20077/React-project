@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.users {
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 10px 3px 15px #595656;
+  width: 280px;
+  border-radius: 12px;
+  padding: 16px;
+  transition: 0.5s ease;
+
+  &:hover {
+    transform: translate(50px, -50px);
+    box-shadow: 20px 6px 15px #595656;
+  }
+  &__name {
+    font-size: 20px;
+  }
+  &__not-hobby {
+    font-style: italic;
+  }
+}
