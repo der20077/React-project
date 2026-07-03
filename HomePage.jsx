@@ -1,6 +1,6 @@
-import "./HomePage.scss";
+import "./UserList.scss";
 
-function HomePage({ users }) {
+function UserList({ users }) {
   return (
     <ul className="users">
       {users.map((user) => {
@@ -24,4 +24,4 @@ function HomePage({ users }) {
   );
 }
 
-export default HomePage;
+export default UserList;
