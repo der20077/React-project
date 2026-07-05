@@ -1,0 +1,75 @@
+.section {
+  background-color: #2c3e50;
+  padding: 30px 20px;
+  margin: 0 auto;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  color: white;
+}
+h1 {
+  font-size: 22px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  row-gap: 10px;
+}
+input,
+select,
+button {
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+select,
+input::placeholder {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+input[type="password"] {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+select,
+input {
+  background-color:  #ffffff;
+  outline: none;
+}
+select:focus,
+input:focus {
+  background-color: #898585;
+  outline: none;
+  color: #fefefe;
+}
+button {
+  background-color: #a5a9ae;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: #fefefe;
+  color: #2c3e50;
+}
+.error-message {
+  color: rgb(203, 46, 46);
+  text-align: center;
+}
+.password-invalid {
+  border: 2px solid red;
+}
+.success-message {
+  color: green;
+  text-align: center;
+}
