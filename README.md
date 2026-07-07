@@ -25,20 +25,11 @@
 ## 🚀 Пример использования
 
 ```jsx
-function App() {
-  const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div>
-      <button onClick={() => setIsOpen(true)}>Открыть</button>
-      {isOpen && (
-        <Modal OnClose={() => setIsOpen(false)}>
+        <Modal OnClose={togalModal}>
           <h2>Заголовок</h2>
           <p>Содержимое модалки</p>
         </Modal>
-      )}
-    </div>
-  );
-}
+  
 
 
